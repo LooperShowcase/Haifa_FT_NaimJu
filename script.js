@@ -96,7 +96,7 @@ try
   if(response.ok) {
     const responseData = await response.json();
     const message = responseData.choices[0].message.content;
-
+    document.getElementById('input-text').value = '';
     conversationaAssistantAdd(message);
     console.log(message);
 
@@ -124,7 +124,8 @@ function updateChatContainer() {
 
   conversationHistory.forEach(message => {
     const chatBubbleContainer = document.createElement("div");
-    chatBubbleContainer.classList.add("chat-bubble-container");
+    let c = message.role === 'user' ? 'chat-bubble-container' : 'chat-bubble-assistant';
+    chatBubbleContainer.classList.add(c);
 
     const label = document.createElement("span");
     label.textContent = message.role === "user" ? "User" : "Assistant";
