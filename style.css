@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#chat-container {
+  margin-top: 20px;
+}
+
+.chat-bubble-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  
+  /* Adjust chat label styling */
+  .chat-label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px; /* Add margin to separate from chat bubble */
+  }
+  
+  /* Adjust chat bubble styling */
+  .chat-bubble {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+.user {
+  background-color: #0078d4;
+  color: white;
+}
+
+.assistant {
+  background-color: #5cb85c;
+  color: white;
+  justify-self: right;
+}
+
+.chat-label {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #aaa;
+}
+
+#input-text {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0b0b0b;
+  color: white;
+  outline: none;
+}
+
+#Submit-button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+#Submit-button:hover {
+  background-color: #449d44;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+h2 {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #aaa;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005a9e;
+}
+
+.container {
+  text-align: center;
+}
+
+h1,
+button {
+  margin-bottom: 20px;
+}

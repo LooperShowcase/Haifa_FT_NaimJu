@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Naim jubran</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <center>
+    <h1 style="display: inline">
+      My Voice assistant
+      <h2 style="display: inline">Naim</h2>
+    </h1>
+    <button onclick="speak();">welcom</button>
+    <div class="container">
+      <form onsubmit="event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      openai_test();">
+      <input type="text" id="input-text"/>
+      <button id="Submit-button">Submit</button>
+      </form>
+      <div id="chat-container"></div>
+    </div>
+  </center>
+  </body>
+</html>
